@@ -1,0 +1,55 @@
+body{
+        font-size: 30px;
+        background: aquamarine;
+}
+
+.main{
+    background: coral;
+    padding:10px;
+    /*flex */
+    display: flex;
+    height: 80vh;
+    /*flex direction: column-reverse; */
+
+    flex-direction: row;
+    margin: 10px;
+    flex-wrap: wrap;
+     /* justify-content: space-around; */
+     justify-content:space-between; 
+align-items: center;
+    }
+.main > div {
+    background: blueviolet;
+    width: 70px;
+    height: 70px;
+    margin:10px;
+    /* Flex */ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Selecting the odds */
+.main > div:nth-child(odd){
+    background:maroon;
+    color:mediumaquamarine;
+    height: 100px;
+    }
+   /* .main > div:nth-child(even){
+        background:whitesmoke;
+        color:midnightblue;
+        height: 100px;
+        align-self: flex-start;
+    }
+
+    */
+        
+/*selecting particular item */
+    .item-2 {
+align-self: flex-end;
+    }
+    .item-4 {
+        order: -1;
+    }
+    .item-3 {
+        order: 1; 
+    }   
